@@ -1,0 +1,17 @@
+{
+	"name": "SQL script customer table",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE Customer(\n    [CustomerID] [int] NOT NULL,\n    [NameStyle]  [bit] NOT NULL,\n    [Title] [nvarchar](8) NULL,\n    [FirstName] [nvarchar](128) NOT NULL,\n    [MiddleName] [nvarchar](20) NULL,\n    [LastName] [nvarchar](128) NOT NULL,\n    [Suffix] [nvarchar](10) NULL,\n    [CompanyName] [nvarchar](128) NULL,\n    [SalesPerson] [nvarchar](256) NULL,\n    [EmailAddress] [nvarchar](50) NULL,\n    [Phone] [nvarchar](20) NULL,\n    [PasswordHash] [varchar](128) NOT NULL,\n    [PasswordSalt] [varchar](10) NOT NULL,\n    [rowguid] [uniqueidentifier] NOT NULL,\n    [ModifiedDate] [datetime] NOT NULL\n)\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "mynewsqlpoolfb123",
+				"poolName": "mynewsqlpoolfb123"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

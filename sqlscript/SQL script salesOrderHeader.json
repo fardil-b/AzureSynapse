@@ -1,0 +1,17 @@
+{
+	"name": "SQL script salesOrderHeader",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE SalesOrderHeader(\n    [SalesOrderID] [int] NOT NULL,\n    [RevisionNumber] [tinyint] NOT NULL,\n    [OrderDate] [datetime] NOT NULL,\n    [DueDate] [datetime] NOT NULL,\n    [ShipDate] [datetime] NULL,\n    [Status] [tinyint] NOT NULL,\n    [OnlineOrderFlag] [BIT] NOT NULL,\n    [SalesOrderNumber]  [nvarchar](23) not null,\n    [PurchaseOrderNumber] [nvarchar](23) NULL,\n    [AccountNumber] [nvarchar](23) NULL,\n    [CustomerID] [int] NOT NULL,\n    [ShipToAddressID] [int] NULL,\n    [BillToAddressID] [int] NULL,\n    [ShipMethod] [nvarchar](50) NOT NULL,\n    [CreditCardApprovalCode] [varchar](15) NULL,\n    [SubTotal] [money] NOT NULL,\n    [TaxAmt] [money] NOT NULL,\n    [Freight] [money] NOT NULL,\n    [TotalDue]  [money] NULL,\n    [Comment] [nvarchar](1000) NULL,\n    [rowguid] [uniqueidentifier] NOT NULL,\n    [ModifiedDate] [datetime] NOT NULL\n)",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "mynewsqlpoolfb123",
+				"poolName": "mynewsqlpoolfb123"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

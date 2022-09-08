@@ -1,0 +1,17 @@
+{
+	"name": "SQL script SalesAggregate",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE SalesAggregate( CustomerID int NOT NULL, TotalSales  float )\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "mynewsqlpoolfb123",
+				"poolName": "mynewsqlpoolfb123"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
